@@ -1,6 +1,6 @@
 // Declare Global variables
 let timer = 60;
-let clutter = "";
+
 let newhit;
 let score = 0;
 let min = 1;
@@ -8,7 +8,8 @@ let max = 20;
 
 //function to create bubbles
 function makeBubble() {
-    for (let i = 0; i <= 125; i++) {
+    let clutter = "";
+    for (let i = 0; i <= 107; i++) {
         clutter += `  <div class="bubble">${Math.round(
             Math.random() * (min + max) + min
         )}</div>`;
