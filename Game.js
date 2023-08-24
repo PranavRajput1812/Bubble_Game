@@ -9,7 +9,7 @@ let max = 20;
 //function to create bubbles
 function makeBubble() {
     let clutter = "";
-    for (let i = 0; i <= 107; i++) {
+    for (let i = 0; i <= 125; i++) {
         clutter += `  <div class="bubble">${Math.round(
             Math.random() * (min + max) + min
         )}</div>`;
