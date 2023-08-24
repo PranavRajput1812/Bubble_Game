@@ -1,0 +1,101 @@
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+ background-color: #313131;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Design the lines around button */
+.main i{
+    position: absolute;
+    inset:0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+
+}
+.main:hover i {
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+
+}
+
+.main i:nth-child(1){
+    border-radius: 43% 57% 74% 26% / 44% 30% 70% 56%  ;
+    animation:  animate 6s linear infinite;
+}
+
+.main i:nth-child(2){
+    border-radius:62% 38% 42% 58% / 52% 38% 62% 48%    ;
+    animation:  animate 4s linear infinite;
+}
+
+.main i:nth-child(3){
+    border-radius: 44% 56% 42% 58% / 37% 65% 35% 63%    ;
+    animation:  animate2 5s linear infinite;
+}
+
+/* Designing animation to show  lines infinitely Rotate around button  */
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+/* Designing Button playGame */
+
+.main .inputBx button{
+    position: relative;
+    width: 100%;
+    padding: 12px 20px;
+    background: transparent;
+    border: 20x solid #fff;
+    font-size: 1.2rem;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .inputBx button{
+    background: linear-gradient(45deg,#ff357a,#fff172);
+    border: none;
+    cursor: pointer;
+}
+
+/* Designing text below PlayGame button */
+.main .inputBx h3{
+    position: relative;
+    
+    display: flex;
+   
+    
+}

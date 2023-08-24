@@ -1,0 +1,105 @@
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+  font-family: 'Courier New', Courier, monospace
+}
+html,body{
+   height : 100%;
+   width : 100%;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(172, 219, 172);
+}
+
+#panel{
+
+   overflow: hidden;
+    width: 90%;
+    height: 90%;
+    background-color: #ffff;
+   border-radius: 10px;
+  
+}
+/* Design Panel top */
+#ptop{
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0px 30%;
+    background-color: rgb(72, 108, 72);
+    
+}
+.elem{
+    display: flex;
+  align-items: center;
+  gap: 20px;  
+  color: #ffff;
+
+
+}
+/* Design boxes that show hit value,score,timer */
+.box{
+  padding: 10px 20px;
+   
+    background-color: #fff;
+    color: rgb(18, 127, 57);
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.elem h4{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Design the Main bubble part in panel */
+#pbtm{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 20px;
+  
+}
+
+.bubble{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;font-size: 18px;
+  font-weight: 500;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(72, 104, 72
+  );
+  border-radius: 50%;
+}
+.bubble:hover{
+  cursor: pointer;
+  background-color: rgb(92, 171, 92);
+}
+
+
+/* Design GameOver part (after Game End)  */
+.final{
+position: relative;
+top: 35%;
+left:35%;
+
+}
+.gameover{
+  position: relative;
+top: 35%;
+left:45%;
+}
+
